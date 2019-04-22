@@ -1,0 +1,92 @@
+@base-font: 'Open Sans', sans-serif; 
+// @font-family: url(../build/libs/fonts/OpenSans-Regular.ttf);
+@light: 300;
+@regular: 400;
+@semibold: 600;
+@base-color: #070707;
+@styles-color: #fff;
+@display-inline: inline-block; 
+@grey: #b2b2b2;
+@light-grey: #424242;
+@shadow-block: 1px 1px 1px 1px #e0e0e0;
+@float-left: left;
+@float-right: right;
+.font-mark {
+	font-weight: @semibold;
+	font-size: 16px;
+}
+.clearfix {
+	&:after {
+			content: ' ';
+			clear: both;
+			display: table;
+		}
+}  
+* {
+	font-family: @base-font;
+	font-style: normal;
+	font-weight: @regular;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+	width: 100%;
+}
+section {
+	margin: 25px 0;
+	padding: 25px 0;
+}
+h2 {
+	text-align: center;
+	color: #171717;
+	font-size: 30px;
+}
+h3 {
+	font-size: 18px;
+	color: #141414;
+	font-weight: @semibold;
+}
+a {
+	text-decoration: none;
+	color: @styles-color;
+	// &: hover {
+	// 	text-decoration: none;
+	// 	color: @styles-color;
+	// }
+}
+.slyder-arrow {
+	border-radius: 50%;
+	box-shadow: @shadow-block;
+	padding: 9px;
+    height: 33px;
+    margin-top: 8%;
+}
+.slyder-arrow--left {
+	float: left;
+}
+.slyder-arrow--right {
+	float: right;
+}
+.paragraph {
+	color: #545454;
+}
+.text-mark {
+	font-weight: @regular;
+	display: block;
+}
+input {
+	display: block;
+	width: 100%;
+}
+textarea {
+	width: 100%;
+}
+span {
+	color: #8d8d8d;
+}
+footer {
+	background: #2c2c2c;
+	color: #999999;
+}

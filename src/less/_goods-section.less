@@ -1,0 +1,47 @@
+@import '_base.less';
+@goods-bacground: @styles-color 100% 0 no-repeat;
+#goods {
+	margin-top: -90px;
+	.goods__position-description {
+		background: url('../img/img5.png') @goods-bacground;
+		height: 180px;
+		margin-bottom: 18px;
+		box-shadow: @shadow-block;
+	}
+	.goods__position-first {
+		background: url('../img/img1.png') @goods-bacground;
+	}
+	.goods__position-second {
+		background: url('../img/img2.png') @goods-bacground;
+	}
+	.goods__position-third {
+		background: url('../img/img3.png') @goods-bacground;	
+	}
+	.goods__position-title--block {
+		padding: 43px 0 0 34px;
+		width: 182px;
+	}
+	.goods__position-title {
+		margin-bottom: 40px;
+	}
+	.goods__position-button {
+		background: #838383;
+		border-radius: 4px;
+		text-align: center;
+		color: @styles-color;
+		width: 112px;
+		height: 32px;
+		line-height: 32px;
+		&:hover {
+			background: #990101;
+			text-decoration: none;
+			color: @styles-color;
+		}
+	}
+	.goods__instruction-header {
+		margin: 50px 0 30px 0;
+	}
+	.goods__instruction-text {
+		margin-bottom: 40px;
+	}
+}
